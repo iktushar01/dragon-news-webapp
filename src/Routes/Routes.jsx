@@ -6,6 +6,8 @@ import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Carrer from "../Pages/Carrer";
 import CategoryNews from "../Pages/CategoryNews";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 
 
  export const router = createBrowserRouter([
@@ -32,4 +34,18 @@ import CategoryNews from "../Pages/CategoryNews";
         }
       ]
     },
+        {
+          path : "/auth",
+          element : <p> sei to</p>,
+          children : [
+            {
+              path : "/auth/login",
+              Component : Login
+            },
+            {
+              path : "/auth/register",
+              Component : Register
+            }
+          ]
+        }
   ]);
