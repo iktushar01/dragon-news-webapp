@@ -25,7 +25,7 @@ const HomeLayout = () => {
           <Outlet />
         </section>
         <aside className="col-span-3">
-          <SocialLogin></SocialLogin>
+          <RightAside></RightAside>
         </aside>
       </main>
     </div>

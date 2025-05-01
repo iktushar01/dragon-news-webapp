@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialLogin = () => {
   return (
-    <div>
+    <div className="mb-3">
       <h2 className="font-bold">Login With</h2>
       <div className="flex flex-col gap-2 mt-4">
         {/* GitHub */}
