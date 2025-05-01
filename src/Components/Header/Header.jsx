@@ -10,17 +10,17 @@ const Header = () => {
             setCurrentTime(new Date());
         }, 1000);
 
-        return () => clearInterval(timer); // Cleanup on unmount
+        return () => clearInterval(timer); 
     }, []);
 
     const formattedDate = format(currentTime, 'EEEE, MMMM d, yyyy');
-    const formattedTime = format(currentTime, 'hh:mm:ss a'); // 12-hour format with AM/PM
+    const formattedTime = format(currentTime, 'hh:mm:ss a'); 
 
     return (
         <div>
             <div className='flex justify-center flex-col items-center'>
                 <img className='w-[250px] md:w-[450px]' src={logo} alt="Logo" />
-                <p className='font-semibold text-accent'>Journalism Without Fear or Favour</p>
+                <p className='text-accent'>Journalism Without Fear or Favour</p>
                
                 <p  className='font-semibold text-accent' >{formattedDate}</p>
                 <p  className='font-semibold text-accent'>{formattedTime}</p>
