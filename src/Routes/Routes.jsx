@@ -14,7 +14,6 @@ import CategoryNews from "../Pages/CategoryNews";
       Component : HomeLayout,
       children : [
         {
-          index : true,
           path : '/',
           Component : Home
         },
