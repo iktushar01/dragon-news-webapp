@@ -1,14 +1,19 @@
-import React from 'react';
-import { useParams } from 'react-router';
+import React, { useEffect } from "react";
+import { useLoaderData, useParams } from "react-router";
 
 const CategoryNews = () => {
-    const  {id} = useParams();
-    console.log(id)
-    return (
-        <div>
-            <h1 className='font-bold'>Dragon News Home </h1>
-        </div>
-    );
+  const { id } = useParams();
+  const data = useLoaderData()
+  console.log(id , data);
+  useEffect(()=>{
+    const filterNews = data.filter(news => news.category_id == id)
+    console.log(filterNews)
+  },[data , id])
+  return (
+    <div>
+      <h1 className="font-bold">Dragon News Home </h1>
+    </div>
+  );
 };
 
 export default CategoryNews;
