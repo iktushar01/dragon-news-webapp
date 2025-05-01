@@ -1,9 +1,12 @@
 import React from 'react';
+import { useParams } from 'react-router';
 
 const CategoryNews = () => {
+    const  {id} = useParams();
+    console.log(id)
     return (
         <div>
-            <h1>wow</h1>
+            <h1 className='font-bold'>Dragon News Home </h1>
         </div>
     );
 };

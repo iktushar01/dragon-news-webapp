@@ -5,6 +5,7 @@ import LatestNews from "../Components/LatestNews";
 import Navbar from "../Components/Navbar";
 import LeftAside from "../Components/HomeLayout/LeftAside";
 import RightAside from "../Components/HomeLayout/RightAside";
+import SocialLogin from "../Components/HomeLayout/SocialLogin";
 
 const HomeLayout = () => {
   return (
@@ -24,7 +25,7 @@ const HomeLayout = () => {
           <Outlet />
         </section>
         <aside className="col-span-3">
-          <RightAside />
+          <SocialLogin></SocialLogin>
         </aside>
       </main>
     </div>
