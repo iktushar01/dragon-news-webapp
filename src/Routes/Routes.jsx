@@ -27,7 +27,7 @@ import CategoryNews from "../Pages/CategoryNews";
           Component : Carrer
         },
         {
-          path : '/category',
+          path : '/category/:id',
           Component : CategoryNews
         }
       ]
