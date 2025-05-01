@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { format } from 'date-fns';
-import logo from "../../assets/logo.png";
+import logo from "../assets/logo.png";
 
 const Header = () => {
     const [currentTime, setCurrentTime] = useState(new Date());

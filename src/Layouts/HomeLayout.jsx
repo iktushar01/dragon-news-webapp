@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router';
-import Header from '../Components/Header/Header';
-import LatestNews from '../Components/Header/LatestNews';
+import Header from '../Components/Header';
+import LatestNews from '../Components/LatestNews';
 
 const HomeLayout = () => {
     return (
