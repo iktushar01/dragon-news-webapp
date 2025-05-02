@@ -8,6 +8,8 @@ import Carrer from "../Pages/Carrer";
 import CategoryNews from "../Pages/CategoryNews";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import AuthLayout from "../Layouts/AuthLayout";
+import Terms from "../Pages/Terms";
 
 
  export const router = createBrowserRouter([
@@ -28,6 +30,10 @@ import Register from "../Pages/Register";
           Component : Carrer
         },
         {
+          path : '/terms',
+          Component : Terms
+        },
+        {
           path : '/category/:id',
           Component : CategoryNews,
           loader : () => fetch("/news.json")
@@ -36,7 +42,7 @@ import Register from "../Pages/Register";
     },
         {
           path : "/auth",
-          element : <p> sei to</p>,
+          element : <AuthLayout/>,
           children : [
             {
               path : "/auth/login",
