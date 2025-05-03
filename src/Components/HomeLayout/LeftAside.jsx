@@ -5,9 +5,13 @@ const LeftAside = () => {
   return (
     <div>
       <Suspense
-        fallback={<span className="loading loading-spinner loading-xl"></span>}
+        fallback={
+          <div className="flex justify-center items-center  h-40">
+            <span className="loading loading-spinner loading-xl"></span>
+          </div>
+        }
       >
-        <Categories></Categories>
+        <Categories />
       </Suspense>
     </div>
   );
