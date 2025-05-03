@@ -20,11 +20,9 @@ const Login = () => {
     signin(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
         navigate(location.state || "/");
       })
       .catch((error) => {
-        console.error(error.message);
         setError("Invalid email or password. Please try again."); // ✅ Set error message
       });
   };

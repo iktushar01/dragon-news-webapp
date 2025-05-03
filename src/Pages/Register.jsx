@@ -42,13 +42,11 @@ const Register = () => {
             navigate('/'); // ✅ Navigate to home after successful registration
           })
           .catch((error) => {
-            console.error(error.message);
             setError(error.message);
             setUser(user);
           });
       })
       .catch((error) => {
-        console.error(error.message);
         setError(error.message);
       });
   };
