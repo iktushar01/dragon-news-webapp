@@ -3,9 +3,10 @@ import { FaStar } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi";
 import { AiOutlineEye } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs"; // Bookmark icon
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
-  const { title, author, thumbnail_url, details, rating, total_view } = news;
+  const {id, title, author, thumbnail_url, details, rating, total_view } = news;
 
   const formattedDate = new Date(author?.published_date).toLocaleDateString("en-US", {
     year: "numeric",
@@ -52,7 +53,9 @@ const NewsCard = ({ news }) => {
       {/* Description */}
       <div className="px-4 text-sm text-gray-700">
         {details?.slice(0, 150)}...
-        <span className="text-orange-600 font-semibold cursor-pointer"> Read More</span>
+       <Link to = {`/news-details/${id}`}>
+       <span className="text-orange-600 font-semibold cursor-pointer"> Read More</span>
+       </Link>
       </div>
 
       <hr className="mt-4 border-gray-300" />
