@@ -2,10 +2,6 @@
 
 A dynamic news web application built using React and Firebase that displays categorized news with login authentication and a modern UI.
 
-![Screenshot](your-screenshot-url) <!-- Replace with your actual image URL -->
-
----
-
 ## 🛠️ Main Technologies Used
 
 - **React JS** – Frontend framework  
@@ -29,12 +25,12 @@ A dynamic news web application built using React and Firebase that displays cate
 
 ## 📦 Dependencies
 
-```json
-{
-  "firebase": "^X.X.X",
-  "react": "^18.X.X",
-  "react-dom": "^18.X.X",
-  "react-router-dom": "^6.X.X",
-  "moment": "^2.X.X",
-  "bootstrap": "^5.X.X" // or "tailwindcss": "^X.X.X"
-}
+- [React](https://react.dev/) – Frontend library  
+- [React DOM](https://www.npmjs.com/package/react-dom) – React DOM rendering  
+- [React Router DOM](https://reactrouter.com/en/main) – Routing for React  
+- [Firebase](https://firebase.google.com/docs/web/setup) – Authentication and hosting  
+- [Moment.js](https://momentjs.com/docs/) – Date/time formatting  
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) *or* [Tailwind CSS](https://tailwindcss.com/docs) – Styling (choose the one you used)
+
+
+
